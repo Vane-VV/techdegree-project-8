@@ -1,17 +1,49 @@
+body {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4)
+}    
+
+.modal {
+    width: 375px;
+    margin: auto auto;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    }
+
 img {
     width: 5em;
     height: 5em;
-    border-radius: 50%;border-radius: 50%;
+    border-radius: 50%;
+    border-radius: 50%;
 }
-
+    
 .name {
     font-size: 17px;
 }
 
-.info {
-    font-size: 15px;
-}
 
-.profiles {
-    border-color: black;
+
+.card {
+    border-color: rgb(36, 36, 36);
 }
