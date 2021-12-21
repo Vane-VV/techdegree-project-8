@@ -1,11 +1,68 @@
-const main = document.querySelector('main');
-const url = `https://randomuser.me/api/`;
-const result = fetch(url)
-           .then(response => response.json())
-           .then(obj => obj.results[0])
-           .catch(err => `Oops! An error occurred: ${err}`);
+// global variables
+let employees = [];
+const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
+email, location, phone, dob &noinfo &nat=US`
+const gridContainer = document.querySelector(".grid-container");
+const overlay = document.querySelector(".overlay");
+const modalContainer = document.querySelector(".modal-content");
+const modalClose = document.querySelector(".modal-close");
 
-result.then(info => console.log(info.picture.medium));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//const main = document.querySelector('main');
+//const url = `https://randomuser.me/api/`;
+//const result = fetch(url)
+//           .then(response => response.json())
+//           .then(obj => obj.results[0])
+//           .catch(err => `Oops! An error occurred: ${err}`);
+
+//result.then(info => console.log(info.picture.medium));
 
 
 
