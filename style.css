@@ -35,7 +35,7 @@ img {
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    border-radius: 50%;
+    vertical-align: middle;  
 }
     
 .name {
@@ -45,5 +45,10 @@ img {
 
 
 .card {
-    border-color: rgb(36, 36, 36);
+   border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
