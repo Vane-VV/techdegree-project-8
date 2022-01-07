@@ -7,6 +7,7 @@ const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 
+
 // fetch data from API
 fetch(urlAPI)
 .then(res => res.json())
@@ -39,6 +40,7 @@ function displayEmployees(employeeData) {
     gridContainer.innerHTML = employeeHTML;
 }
 
+
 function displayModal(index) {
     // use object destructuring make our template literal cleaner
     let { name, dob, phone, email, location: { city, street, state, postcode
@@ -61,6 +63,7 @@ function displayModal(index) {
     modalContainer.innerHTML = modalHTML;
     }
 
+
     gridContainer.addEventListener('click', e => {
 
         if (e.target !== gridContainer) {
@@ -71,6 +74,7 @@ function displayModal(index) {
         }
     })
 
+
     modalClose.addEventListener('click', () => {
         overlay.classList.add("hidden");
         });
@@ -79,6 +83,11 @@ function displayModal(index) {
 
 
 
+
+
+
+
+        
 
 
 
@@ -93,14 +102,12 @@ function displayModal(index) {
 //result.then(info => console.log(info.picture.medium));
 
 
-
 //const url = `https://randomuser.me/api/`;
 //console.log(fetch(url)
 //           .then(response => response.json())
 //           .then(obj => obj.results[0])
 //           .then(result => result.email)
 //           );
-
 
 
 //html = `<div  class="card">
@@ -115,9 +122,7 @@ function displayModal(index) {
 //main.innerHTML = html;
 
 
-
 //const addTwo = (n) => n + 2;
-
 
 
 //function addProfile(profile) {
@@ -130,7 +135,6 @@ function displayModal(index) {
 //
 
 
-
 //const picture = result.then(result => result.picture.large)
 //const html = `<div  class="card">
 //      <img  class="avatar" src="${result.picture.large}">
@@ -140,7 +144,6 @@ function displayModal(index) {
 //          <p class="adress">City</p>
 //      </div>
 //    </div> `
-
 
 
 //main.innerHTML = html;
