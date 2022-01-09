@@ -21,7 +21,7 @@ body {
     padding: 30px 20px;
 }
 
-.modal-close {
+.modal-content {
     position: absolute;
     right: 15px;
     top: 5px;
